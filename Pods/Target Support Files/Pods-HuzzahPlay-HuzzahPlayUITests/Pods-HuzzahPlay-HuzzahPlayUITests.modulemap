@@ -1,0 +1,6 @@
+framework module Pods_HuzzahPlay_HuzzahPlayUITests {
+  umbrella header "Pods-HuzzahPlay-HuzzahPlayUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

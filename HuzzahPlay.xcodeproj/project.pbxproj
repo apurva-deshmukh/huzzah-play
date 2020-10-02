@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D4A9271EC2D003353F28947 /* Pods_HuzzahPlayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D8BC149E13CBFF072822DE /* Pods_HuzzahPlayTests.framework */; };
+		9D4883FCDFD3F4898040C78F /* Pods_HuzzahPlay_HuzzahPlayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26262FA018603AEBE2E91326 /* Pods_HuzzahPlay_HuzzahPlayUITests.framework */; };
+		C7C9D29F9D15F14BAC9E3EDC /* Pods_HuzzahPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C315655A05BD37D57EB1AD9 /* Pods_HuzzahPlay.framework */; };
 		EE21B0322527A58C000DBDF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21B0312527A58C000DBDF7 /* AppDelegate.swift */; };
 		EE21B0342527A58C000DBDF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21B0332527A58C000DBDF7 /* SceneDelegate.swift */; };
 		EE21B0362527A58C000DBDF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21B0352527A58C000DBDF7 /* ViewController.swift */; };
-		EE21B0392527A58C000DBDF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE21B0372527A58C000DBDF7 /* Main.storyboard */; };
 		EE21B03B2527A58C000DBDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE21B03A2527A58C000DBDF7 /* Assets.xcassets */; };
 		EE21B03E2527A58C000DBDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE21B03C2527A58C000DBDF7 /* LaunchScreen.storyboard */; };
 		EE21B0492527A58D000DBDF7 /* HuzzahPlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21B0482527A58D000DBDF7 /* HuzzahPlayTests.swift */; };
 		EE21B0542527A58D000DBDF7 /* HuzzahPlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21B0532527A58D000DBDF7 /* HuzzahPlayUITests.swift */; };
+		EE21B0652527B5AB000DBDF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE21B0642527B5AB000DBDF7 /* GoogleService-Info.plist */; };
+		EEBAFFA02527BE7200DF38FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBAFF9F2527BE7200DF38FA /* Main.storyboard */; };
+		EEBAFFA52527BF2E00DF38FA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBAFFA42527BF2E00DF38FA /* Extensions.swift */; };
+		EEDDE85A2527C58C0050BCDD /* GloriaHallelujah-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEDDE8592527C58C0050BCDD /* GloriaHallelujah-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +41,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26262FA018603AEBE2E91326 /* Pods_HuzzahPlay_HuzzahPlayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuzzahPlay_HuzzahPlayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A9186C949FC7D1FAE66FA30 /* Pods-HuzzahPlayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuzzahPlayTests.debug.xcconfig"; path = "Target Support Files/Pods-HuzzahPlayTests/Pods-HuzzahPlayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		52C2BFCB1B94A242597C025A /* Pods-HuzzahPlayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuzzahPlayTests.release.xcconfig"; path = "Target Support Files/Pods-HuzzahPlayTests/Pods-HuzzahPlayTests.release.xcconfig"; sourceTree = "<group>"; };
+		55D8BC149E13CBFF072822DE /* Pods_HuzzahPlayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuzzahPlayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C315655A05BD37D57EB1AD9 /* Pods_HuzzahPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuzzahPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCD8E61F15BDFB15A469B67 /* Pods-HuzzahPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuzzahPlay.release.xcconfig"; path = "Target Support Files/Pods-HuzzahPlay/Pods-HuzzahPlay.release.xcconfig"; sourceTree = "<group>"; };
+		D0A3325696674497458E5312 /* Pods-HuzzahPlay-HuzzahPlayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuzzahPlay-HuzzahPlayUITests.debug.xcconfig"; path = "Target Support Files/Pods-HuzzahPlay-HuzzahPlayUITests/Pods-HuzzahPlay-HuzzahPlayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9B457A29A934759FC4C3D63 /* Pods-HuzzahPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuzzahPlay.debug.xcconfig"; path = "Target Support Files/Pods-HuzzahPlay/Pods-HuzzahPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		EE21B02E2527A58C000DBDF7 /* HuzzahPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuzzahPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE21B0312527A58C000DBDF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE21B0332527A58C000DBDF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE21B0352527A58C000DBDF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE21B0382527A58C000DBDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE21B03A2527A58C000DBDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE21B03D2527A58C000DBDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE21B03F2527A58C000DBDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +62,11 @@
 		EE21B04F2527A58D000DBDF7 /* HuzzahPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuzzahPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE21B0532527A58D000DBDF7 /* HuzzahPlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuzzahPlayUITests.swift; sourceTree = "<group>"; };
 		EE21B0552527A58D000DBDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE21B0642527B5AB000DBDF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EEBAFF9F2527BE7200DF38FA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EEBAFFA42527BF2E00DF38FA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EEDDE8592527C58C0050BCDD /* GloriaHallelujah-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GloriaHallelujah-Regular.ttf"; sourceTree = "<group>"; };
+		F476021E83F68CF29A7A542B /* Pods-HuzzahPlay-HuzzahPlayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuzzahPlay-HuzzahPlayUITests.release.xcconfig"; path = "Target Support Files/Pods-HuzzahPlay-HuzzahPlayUITests/Pods-HuzzahPlay-HuzzahPlayUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C9D29F9D15F14BAC9E3EDC /* Pods_HuzzahPlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D4A9271EC2D003353F28947 /* Pods_HuzzahPlayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D4883FCDFD3F4898040C78F /* Pods_HuzzahPlay_HuzzahPlayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4150770DA26C33BD2BEF53B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C315655A05BD37D57EB1AD9 /* Pods_HuzzahPlay.framework */,
+				26262FA018603AEBE2E91326 /* Pods_HuzzahPlay_HuzzahPlayUITests.framework */,
+				55D8BC149E13CBFF072822DE /* Pods_HuzzahPlayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F3F0833A2470563FEC055C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9B457A29A934759FC4C3D63 /* Pods-HuzzahPlay.debug.xcconfig */,
+				9CCD8E61F15BDFB15A469B67 /* Pods-HuzzahPlay.release.xcconfig */,
+				D0A3325696674497458E5312 /* Pods-HuzzahPlay-HuzzahPlayUITests.debug.xcconfig */,
+				F476021E83F68CF29A7A542B /* Pods-HuzzahPlay-HuzzahPlayUITests.release.xcconfig */,
+				4A9186C949FC7D1FAE66FA30 /* Pods-HuzzahPlayTests.debug.xcconfig */,
+				52C2BFCB1B94A242597C025A /* Pods-HuzzahPlayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EE21B0252527A58C000DBDF7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +127,8 @@
 				EE21B0472527A58D000DBDF7 /* HuzzahPlayTests */,
 				EE21B0522527A58D000DBDF7 /* HuzzahPlayUITests */,
 				EE21B02F2527A58C000DBDF7 /* Products */,
+				5F3F0833A2470563FEC055C2 /* Pods */,
+				4150770DA26C33BD2BEF53B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +145,16 @@
 		EE21B0302527A58C000DBDF7 /* HuzzahPlay */ = {
 			isa = PBXGroup;
 			children = (
+				EEBAFF982527BB9100DF38FA /* Utils */,
+				EEBAFF972527BB8D00DF38FA /* API */,
+				EEBAFF962527BB8800DF38FA /* ViewModel */,
+				EEBAFF952527BB8200DF38FA /* Controller */,
+				EEBAFF942527BB7E00DF38FA /* View */,
+				EEBAFF932527BB7700DF38FA /* Model */,
 				EE21B0312527A58C000DBDF7 /* AppDelegate.swift */,
 				EE21B0332527A58C000DBDF7 /* SceneDelegate.swift */,
-				EE21B0352527A58C000DBDF7 /* ViewController.swift */,
-				EE21B0372527A58C000DBDF7 /* Main.storyboard */,
-				EE21B03A2527A58C000DBDF7 /* Assets.xcassets */,
-				EE21B03C2527A58C000DBDF7 /* LaunchScreen.storyboard */,
 				EE21B03F2527A58C000DBDF7 /* Info.plist */,
+				EE21B0642527B5AB000DBDF7 /* GoogleService-Info.plist */,
 			);
 			path = HuzzahPlay;
 			sourceTree = "<group>";
@@ -128,6 +177,70 @@
 			path = HuzzahPlayUITests;
 			sourceTree = "<group>";
 		};
+		EEBAFF932527BB7700DF38FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EEBAFF942527BB7E00DF38FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEDDE8522527C54D0050BCDD /* Assets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EEBAFF952527BB8200DF38FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE21B0352527A58C000DBDF7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EEBAFF962527BB8800DF38FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EEBAFF972527BB8D00DF38FA /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EEBAFF982527BB9100DF38FA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EEBAFFA42527BF2E00DF38FA /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EEDDE8522527C54D0050BCDD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EEDDE8532527C55F0050BCDD /* Fonts */,
+				EEBAFF9F2527BE7200DF38FA /* Main.storyboard */,
+				EE21B03A2527A58C000DBDF7 /* Assets.xcassets */,
+				EE21B03C2527A58C000DBDF7 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EEDDE8532527C55F0050BCDD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EEDDE8592527C58C0050BCDD /* GloriaHallelujah-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE21B0582527A58D000DBDF7 /* Build configuration list for PBXNativeTarget "HuzzahPlay" */;
 			buildPhases = (
+				160E60EDACB1C3334C60247D /* [CP] Check Pods Manifest.lock */,
 				EE21B02A2527A58C000DBDF7 /* Sources */,
 				EE21B02B2527A58C000DBDF7 /* Frameworks */,
 				EE21B02C2527A58C000DBDF7 /* Resources */,
+				A4F856D93943F4FF7C0EC29C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE21B05B2527A58D000DBDF7 /* Build configuration list for PBXNativeTarget "HuzzahPlayTests" */;
 			buildPhases = (
+				E404BA988142EF3B19ADABCF /* [CP] Check Pods Manifest.lock */,
 				EE21B0402527A58D000DBDF7 /* Sources */,
 				EE21B0412527A58D000DBDF7 /* Frameworks */,
 				EE21B0422527A58D000DBDF7 /* Resources */,
@@ -170,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE21B05E2527A58D000DBDF7 /* Build configuration list for PBXNativeTarget "HuzzahPlayUITests" */;
 			buildPhases = (
+				983FE572179107BB38C057E1 /* [CP] Check Pods Manifest.lock */,
 				EE21B04B2527A58D000DBDF7 /* Sources */,
 				EE21B04C2527A58D000DBDF7 /* Frameworks */,
 				EE21B04D2527A58D000DBDF7 /* Resources */,
+				85316E066365722203A4DB14 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,9 +349,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEDDE85A2527C58C0050BCDD /* GloriaHallelujah-Regular.ttf in Resources */,
 				EE21B03E2527A58C000DBDF7 /* LaunchScreen.storyboard in Resources */,
+				EE21B0652527B5AB000DBDF7 /* GoogleService-Info.plist in Resources */,
 				EE21B03B2527A58C000DBDF7 /* Assets.xcassets in Resources */,
-				EE21B0392527A58C000DBDF7 /* Main.storyboard in Resources */,
+				EEBAFFA02527BE7200DF38FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +373,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		160E60EDACB1C3334C60247D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuzzahPlay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85316E066365722203A4DB14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HuzzahPlay-HuzzahPlayUITests/Pods-HuzzahPlay-HuzzahPlayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HuzzahPlay-HuzzahPlayUITests/Pods-HuzzahPlay-HuzzahPlayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HuzzahPlay-HuzzahPlayUITests/Pods-HuzzahPlay-HuzzahPlayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		983FE572179107BB38C057E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuzzahPlay-HuzzahPlayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4F856D93943F4FF7C0EC29C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HuzzahPlay/Pods-HuzzahPlay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HuzzahPlay/Pods-HuzzahPlay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HuzzahPlay/Pods-HuzzahPlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E404BA988142EF3B19ADABCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuzzahPlayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE21B02A2527A58C000DBDF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +484,7 @@
 				EE21B0362527A58C000DBDF7 /* ViewController.swift in Sources */,
 				EE21B0322527A58C000DBDF7 /* AppDelegate.swift in Sources */,
 				EE21B0342527A58C000DBDF7 /* SceneDelegate.swift in Sources */,
+				EEBAFFA52527BF2E00DF38FA /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +520,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EE21B0372527A58C000DBDF7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE21B0382527A58C000DBDF7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE21B03C2527A58C000DBDF7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +649,7 @@
 		};
 		EE21B0592527A58D000DBDF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9B457A29A934759FC4C3D63 /* Pods-HuzzahPlay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +669,7 @@
 		};
 		EE21B05A2527A58D000DBDF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CCD8E61F15BDFB15A469B67 /* Pods-HuzzahPlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +689,7 @@
 		};
 		EE21B05C2527A58D000DBDF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A9186C949FC7D1FAE66FA30 /* Pods-HuzzahPlayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +712,7 @@
 		};
 		EE21B05D2527A58D000DBDF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C2BFCB1B94A242597C025A /* Pods-HuzzahPlayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +735,7 @@
 		};
 		EE21B05F2527A58D000DBDF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0A3325696674497458E5312 /* Pods-HuzzahPlay-HuzzahPlayUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +756,7 @@
 		};
 		EE21B0602527A58D000DBDF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F476021E83F68CF29A7A542B /* Pods-HuzzahPlay-HuzzahPlayUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
