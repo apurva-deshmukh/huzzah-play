@@ -12,15 +12,29 @@
 		C7C9D29F9D15F14BAC9E3EDC /* Pods_HuzzahPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C315655A05BD37D57EB1AD9 /* Pods_HuzzahPlay.framework */; };
 		EE21B0322527A58C000DBDF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21B0312527A58C000DBDF7 /* AppDelegate.swift */; };
 		EE21B0342527A58C000DBDF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21B0332527A58C000DBDF7 /* SceneDelegate.swift */; };
-		EE21B0362527A58C000DBDF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21B0352527A58C000DBDF7 /* ViewController.swift */; };
+		EE21B0362527A58C000DBDF7 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21B0352527A58C000DBDF7 /* WelcomeController.swift */; };
 		EE21B03B2527A58C000DBDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE21B03A2527A58C000DBDF7 /* Assets.xcassets */; };
 		EE21B03E2527A58C000DBDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE21B03C2527A58C000DBDF7 /* LaunchScreen.storyboard */; };
 		EE21B0492527A58D000DBDF7 /* HuzzahPlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21B0482527A58D000DBDF7 /* HuzzahPlayTests.swift */; };
 		EE21B0542527A58D000DBDF7 /* HuzzahPlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21B0532527A58D000DBDF7 /* HuzzahPlayUITests.swift */; };
 		EE21B0652527B5AB000DBDF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE21B0642527B5AB000DBDF7 /* GoogleService-Info.plist */; };
+		EE2317D525291CC500C98113 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2317D425291CC500C98113 /* Constants.swift */; };
+		EE2317DB2529300700C98113 /* StudentHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2317DA2529300700C98113 /* StudentHomeController.swift */; };
+		EE7B0EC725291200009E21BB /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B0EC625291200009E21BB /* AuthService.swift */; };
+		EE7B0ECC25291390009E21BB /* StudentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B0ECB25291390009E21BB /* StudentService.swift */; };
+		EE7B0ED12529139E009E21BB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B0ED02529139E009E21BB /* Student.swift */; };
 		EEBAFFA02527BE7200DF38FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBAFF9F2527BE7200DF38FA /* Main.storyboard */; };
 		EEBAFFA52527BF2E00DF38FA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBAFFA42527BF2E00DF38FA /* Extensions.swift */; };
 		EEDDE85A2527C58C0050BCDD /* GloriaHallelujah-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEDDE8592527C58C0050BCDD /* GloriaHallelujah-Regular.ttf */; };
+		EEDDE8622527D3250050BCDD /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDDE8612527D3250050BCDD /* MainController.swift */; };
+		EEDDE86A2527D4C10050BCDD /* StudentLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDDE8692527D4C10050BCDD /* StudentLoginController.swift */; };
+		EEEA012C2527D79600E55319 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA012B2527D79600E55319 /* CustomTextField.swift */; };
+		EEEA01312527D84100E55319 /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA01302527D84100E55319 /* InputContainerView.swift */; };
+		EEEA01362527DD7F00E55319 /* StudentWelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA01352527DD7F00E55319 /* StudentWelcomeController.swift */; };
+		EEEA013B2527E1C000E55319 /* FirstQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA013A2527E1C000E55319 /* FirstQuestionController.swift */; };
+		EEEA01402527E6B200E55319 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA013F2527E6B200E55319 /* AnswerCell.swift */; };
+		EEEA01452527F02000E55319 /* SecondQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA01442527F02000E55319 /* SecondQuestionController.swift */; };
+		EEEA014B2527F03200E55319 /* ThirdQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA014A2527F03200E55319 /* ThirdQuestionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +66,7 @@
 		EE21B02E2527A58C000DBDF7 /* HuzzahPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuzzahPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE21B0312527A58C000DBDF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE21B0332527A58C000DBDF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE21B0352527A58C000DBDF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE21B0352527A58C000DBDF7 /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
 		EE21B03A2527A58C000DBDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE21B03D2527A58C000DBDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE21B03F2527A58C000DBDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,9 +77,23 @@
 		EE21B0532527A58D000DBDF7 /* HuzzahPlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuzzahPlayUITests.swift; sourceTree = "<group>"; };
 		EE21B0552527A58D000DBDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE21B0642527B5AB000DBDF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE2317D425291CC500C98113 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE2317DA2529300700C98113 /* StudentHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeController.swift; sourceTree = "<group>"; };
+		EE7B0EC625291200009E21BB /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		EE7B0ECB25291390009E21BB /* StudentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentService.swift; sourceTree = "<group>"; };
+		EE7B0ED02529139E009E21BB /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		EEBAFF9F2527BE7200DF38FA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EEBAFFA42527BF2E00DF38FA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EEDDE8592527C58C0050BCDD /* GloriaHallelujah-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GloriaHallelujah-Regular.ttf"; sourceTree = "<group>"; };
+		EEDDE8612527D3250050BCDD /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		EEDDE8692527D4C10050BCDD /* StudentLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLoginController.swift; sourceTree = "<group>"; };
+		EEEA012B2527D79600E55319 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EEEA01302527D84100E55319 /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContainerView.swift; sourceTree = "<group>"; };
+		EEEA01352527DD7F00E55319 /* StudentWelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentWelcomeController.swift; sourceTree = "<group>"; };
+		EEEA013A2527E1C000E55319 /* FirstQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuestionController.swift; sourceTree = "<group>"; };
+		EEEA013F2527E6B200E55319 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		EEEA01442527F02000E55319 /* SecondQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionController.swift; sourceTree = "<group>"; };
+		EEEA014A2527F03200E55319 /* ThirdQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdQuestionController.swift; sourceTree = "<group>"; };
 		F476021E83F68CF29A7A542B /* Pods-HuzzahPlay-HuzzahPlayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuzzahPlay-HuzzahPlayUITests.release.xcconfig"; path = "Target Support Files/Pods-HuzzahPlay-HuzzahPlayUITests/Pods-HuzzahPlay-HuzzahPlayUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,9 +205,18 @@
 			path = HuzzahPlayUITests;
 			sourceTree = "<group>";
 		};
+		EE2317D925292FEF00C98113 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				EE2317DA2529300700C98113 /* StudentHomeController.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
 		EEBAFF932527BB7700DF38FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EE7B0ED02529139E009E21BB /* Student.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +225,9 @@
 			isa = PBXGroup;
 			children = (
 				EEDDE8522527C54D0050BCDD /* Assets */,
+				EEEA012B2527D79600E55319 /* CustomTextField.swift */,
+				EEEA01302527D84100E55319 /* InputContainerView.swift */,
+				EEEA013F2527E6B200E55319 /* AnswerCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,7 +235,9 @@
 		EEBAFF952527BB8200DF38FA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EE21B0352527A58C000DBDF7 /* ViewController.swift */,
+				EE2317D925292FEF00C98113 /* Student */,
+				EEDDE8662527D4960050BCDD /* Onboarding */,
+				EEDDE8612527D3250050BCDD /* MainController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -210,6 +252,8 @@
 		EEBAFF972527BB8D00DF38FA /* API */ = {
 			isa = PBXGroup;
 			children = (
+				EE7B0EC625291200009E21BB /* AuthService.swift */,
+				EE7B0ECB25291390009E21BB /* StudentService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -218,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				EEBAFFA42527BF2E00DF38FA /* Extensions.swift */,
+				EE2317D425291CC500C98113 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -239,6 +284,35 @@
 				EEDDE8592527C58C0050BCDD /* GloriaHallelujah-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EEDDE8662527D4960050BCDD /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EEDDE8682527D4A90050BCDD /* Student */,
+				EEDDE8672527D4A50050BCDD /* Teacher */,
+				EE21B0352527A58C000DBDF7 /* WelcomeController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EEDDE8672527D4A50050BCDD /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Teacher;
+			sourceTree = "<group>";
+		};
+		EEDDE8682527D4A90050BCDD /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				EEDDE8692527D4C10050BCDD /* StudentLoginController.swift */,
+				EEEA01352527DD7F00E55319 /* StudentWelcomeController.swift */,
+				EEEA013A2527E1C000E55319 /* FirstQuestionController.swift */,
+				EEEA01442527F02000E55319 /* SecondQuestionController.swift */,
+				EEEA014A2527F03200E55319 /* ThirdQuestionController.swift */,
+			);
+			path = Student;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,10 +555,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE21B0362527A58C000DBDF7 /* ViewController.swift in Sources */,
+				EEEA012C2527D79600E55319 /* CustomTextField.swift in Sources */,
+				EE2317D525291CC500C98113 /* Constants.swift in Sources */,
+				EEEA01312527D84100E55319 /* InputContainerView.swift in Sources */,
+				EEEA013B2527E1C000E55319 /* FirstQuestionController.swift in Sources */,
+				EEEA01402527E6B200E55319 /* AnswerCell.swift in Sources */,
+				EE21B0362527A58C000DBDF7 /* WelcomeController.swift in Sources */,
+				EEDDE86A2527D4C10050BCDD /* StudentLoginController.swift in Sources */,
 				EE21B0322527A58C000DBDF7 /* AppDelegate.swift in Sources */,
+				EEEA01362527DD7F00E55319 /* StudentWelcomeController.swift in Sources */,
 				EE21B0342527A58C000DBDF7 /* SceneDelegate.swift in Sources */,
+				EEEA014B2527F03200E55319 /* ThirdQuestionController.swift in Sources */,
+				EEEA01452527F02000E55319 /* SecondQuestionController.swift in Sources */,
 				EEBAFFA52527BF2E00DF38FA /* Extensions.swift in Sources */,
+				EEDDE8622527D3250050BCDD /* MainController.swift in Sources */,
+				EE2317DB2529300700C98113 /* StudentHomeController.swift in Sources */,
+				EE7B0EC725291200009E21BB /* AuthService.swift in Sources */,
+				EE7B0ECC25291390009E21BB /* StudentService.swift in Sources */,
+				EE7B0ED12529139E009E21BB /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

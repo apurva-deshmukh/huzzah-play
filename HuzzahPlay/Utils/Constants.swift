@@ -1,0 +1,10 @@
+//
+//  Constants.swift
+//  HuzzahPlay
+//
+//  Created by Apurva Deshmukh on 10/3/20.
+//
+
+import Firebase
+
+let COLLECTION_STUDENTS = Firestore.firestore().collection("students")

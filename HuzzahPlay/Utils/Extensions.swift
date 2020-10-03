@@ -80,6 +80,16 @@ extension UIView {
                bottom: view.bottomAnchor, right: view.rightAnchor)
     }
     
+    func setHeight(height: CGFloat) {
+        translatesAutoresizingMaskIntoConstraints = false
+        heightAnchor.constraint(equalToConstant: height).isActive = true
+    }
+    
+    func setWidth(width: CGFloat) {
+        translatesAutoresizingMaskIntoConstraints = false
+        widthAnchor.constraint(equalToConstant: width).isActive = true
+    }
+    
 }
 
 // MARK: - UIColor
@@ -89,7 +99,7 @@ extension UIColor {
     }
     static let light = UIColor.rgb(red: 247, green: 255, blue: 247)
     static let primary = UIColor.rgb(red: 78, green: 205, blue: 196)
-    static let dark = UIColor.rgb(red: 26, green: 53, blue: 92)
+    static let dark = UIColor.rgb(red: 26, green: 83, blue: 92)
     static let secondary = UIColor.rgb(red: 244, green: 106, blue: 106)
 }
 
