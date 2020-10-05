@@ -41,6 +41,24 @@ class StudentHomeController: UIViewController {
         return label
     }()
     
+    private let imageView: UIImageView = {
+        let iv = UIImageView()
+        iv.image = #imageLiteral(resourceName: "dice").withRenderingMode(.alwaysOriginal)
+        iv.contentMode = .scaleAspectFit
+        return iv
+    }()
+    
+    private let button: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Roll dice!", for: .normal)
+        button.setTitleColor(.light, for: .normal)
+        button.backgroundColor = .secondary
+        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(didTapRoll), for: .touchUpInside)
+        return button
+    }()
+    
     // MARK: - Lifecycle
     
     init(student: Student) {
@@ -57,6 +75,8 @@ class StudentHomeController: UIViewController {
         
         view.addSubview(headerView)
         view.addSubview(mainLabel)
+        view.addSubview(imageView)
+        view.addSubview(button)
         
         configureUI()
     }
@@ -66,12 +86,15 @@ class StudentHomeController: UIViewController {
         
         headerView.anchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 50, paddingLeft: 20, paddingRight: 20, height: 100)
         mainLabel.anchor(top: headerView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 10, paddingLeft: 32, paddingRight: 32)
+        imageView.anchor(top: mainLabel.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingLeft: 32, paddingRight: 32, height: view.frame.height-500)
+        button.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingLeft: 50, paddingBottom: 30, paddingRight: 50)
+        
     }
     
     // MARK: - Selectors
     
-    @objc func didTapContinue() {
-        let controller = FirstQuestionController(student: student)
+    @objc func didTapRoll() {
+        let controller = ShowPartnerController(student: student)
         navigationController?.pushViewController(controller, animated: true)
     }
     
@@ -91,13 +114,14 @@ class StudentHomeController: UIViewController {
             )
         }
         
-        print("DEBUG: \(student)")
-        
         label.font = UIFontMetrics.default.scaledFont(for: customFont).withSize(30)
         label.adjustsFontForContentSizeCategory = true
 
         mainLabel.font = UIFontMetrics.default.scaledFont(for: customFont).withSize(25)
         mainLabel.adjustsFontForContentSizeCategory = true
+        
+        button.titleLabel?.font = UIFontMetrics.default.scaledFont(for: customFont).withSize(20)
+        button.titleLabel?.adjustsFontForContentSizeCategory = true
     
     }
 }

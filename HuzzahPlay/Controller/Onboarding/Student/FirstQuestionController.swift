@@ -84,8 +84,7 @@ class FirstQuestionController: UIViewController {
         
         headerView.anchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor,
                           paddingTop: 50, paddingLeft: 20, paddingRight: 20, height: 150)
-        nextButton.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor,
-                          paddingLeft: 50, paddingBottom: 50, paddingRight: 50)
+        nextButton.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingLeft: 50, paddingBottom: 50, paddingRight: 50)
         tableView.anchor(top: headerView.bottomAnchor, left: view.leftAnchor, bottom: nextButton.topAnchor, right: view.rightAnchor, paddingTop: 20, paddingBottom: 20, width: view.frame.width)
     }
     

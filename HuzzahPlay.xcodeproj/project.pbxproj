@@ -35,6 +35,8 @@
 		EEEA01402527E6B200E55319 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA013F2527E6B200E55319 /* AnswerCell.swift */; };
 		EEEA01452527F02000E55319 /* SecondQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA01442527F02000E55319 /* SecondQuestionController.swift */; };
 		EEEA014B2527F03200E55319 /* ThirdQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA014A2527F03200E55319 /* ThirdQuestionController.swift */; };
+		EEF3B638252AAB9D00FEFACD /* ShowPartnerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF3B637252AAB9D00FEFACD /* ShowPartnerController.swift */; };
+		EEF3B63E252ABD7200FEFACD /* ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF3B63D252ABD7200FEFACD /* ActivityController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		EEEA013F2527E6B200E55319 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		EEEA01442527F02000E55319 /* SecondQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionController.swift; sourceTree = "<group>"; };
 		EEEA014A2527F03200E55319 /* ThirdQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdQuestionController.swift; sourceTree = "<group>"; };
+		EEF3B637252AAB9D00FEFACD /* ShowPartnerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPartnerController.swift; sourceTree = "<group>"; };
+		EEF3B63D252ABD7200FEFACD /* ActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityController.swift; sourceTree = "<group>"; };
 		F476021E83F68CF29A7A542B /* Pods-HuzzahPlay-HuzzahPlayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuzzahPlay-HuzzahPlayUITests.release.xcconfig"; path = "Target Support Files/Pods-HuzzahPlay-HuzzahPlayUITests/Pods-HuzzahPlay-HuzzahPlayUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,7 +212,9 @@
 		EE2317D925292FEF00C98113 /* Student */ = {
 			isa = PBXGroup;
 			children = (
+				EEF3B63C252ABD5300FEFACD /* Game */,
 				EE2317DA2529300700C98113 /* StudentHomeController.swift */,
+				EEF3B637252AAB9D00FEFACD /* ShowPartnerController.swift */,
 			);
 			path = Student;
 			sourceTree = "<group>";
@@ -313,6 +319,14 @@
 				EEEA014A2527F03200E55319 /* ThirdQuestionController.swift */,
 			);
 			path = Student;
+			sourceTree = "<group>";
+		};
+		EEF3B63C252ABD5300FEFACD /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				EEF3B63D252ABD7200FEFACD /* ActivityController.swift */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -558,10 +572,12 @@
 				EEEA012C2527D79600E55319 /* CustomTextField.swift in Sources */,
 				EE2317D525291CC500C98113 /* Constants.swift in Sources */,
 				EEEA01312527D84100E55319 /* InputContainerView.swift in Sources */,
+				EEF3B638252AAB9D00FEFACD /* ShowPartnerController.swift in Sources */,
 				EEEA013B2527E1C000E55319 /* FirstQuestionController.swift in Sources */,
 				EEEA01402527E6B200E55319 /* AnswerCell.swift in Sources */,
 				EE21B0362527A58C000DBDF7 /* WelcomeController.swift in Sources */,
 				EEDDE86A2527D4C10050BCDD /* StudentLoginController.swift in Sources */,
+				EEF3B63E252ABD7200FEFACD /* ActivityController.swift in Sources */,
 				EE21B0322527A58C000DBDF7 /* AppDelegate.swift in Sources */,
 				EEEA01362527DD7F00E55319 /* StudentWelcomeController.swift in Sources */,
 				EE21B0342527A58C000DBDF7 /* SceneDelegate.swift in Sources */,

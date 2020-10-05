@@ -13,8 +13,8 @@ struct Student {
     let email: String
     var answers: [String]
     
-    init(uid: String, dictionary: [String: Any]) {
-        self.uid = uid
+    init(dictionary: [String: Any]) {
+        self.uid = dictionary["uid"] as? String ?? ""
         self.firstName = dictionary["first-name"] as? String ?? ""
         self.lastName = dictionary["last-name"] as? String ?? ""
         self.email = dictionary["email"] as? String ?? ""
