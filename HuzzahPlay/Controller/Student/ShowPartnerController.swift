@@ -14,6 +14,8 @@ class ShowPartnerController: UIViewController {
     var student: Student
     var otherStudents: [Student]?
     
+    var partner: Student?
+    
     private let mainLabel: UILabel = {
         let label = UILabel()
         label.text = "Your partner is..."
@@ -97,7 +99,8 @@ class ShowPartnerController: UIViewController {
     // MARK: - Selectors
     
     @objc func didTapNext() {
-        let controller = ActivityController(student: student)
+        guard let partner = partner else { return }
+        let controller = ActivityController(student: student, partner: partner)
         navigationController?.pushViewController(controller, animated: true)
     }
     
@@ -126,5 +129,6 @@ class ShowPartnerController: UIViewController {
     func configureText() {
         guard let otherStudents = otherStudents else { return }
         label.text = "\(otherStudents[0].firstName)!"
+        partner = otherStudents[0]
     }
 }

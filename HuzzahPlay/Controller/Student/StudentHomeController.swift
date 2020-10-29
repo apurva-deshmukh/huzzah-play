@@ -114,6 +114,8 @@ class StudentHomeController: UIViewController {
             )
         }
         
+        print("DEBUG: \(student)")
+        
         label.font = UIFontMetrics.default.scaledFont(for: customFont).withSize(30)
         label.adjustsFontForContentSizeCategory = true
 

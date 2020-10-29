@@ -13,7 +13,7 @@ class SecondQuestionController: UIViewController {
     
     // MARK: - Properties
     
-    private let answerChoices = ["Answer 1", "Answer 2", "Answer 3", "Answer 4"]
+    private let answerChoices = ["Basketball", "Tennis", "Dance", "Running", "Soccer"]
     
     var selectedString: String?
     
@@ -29,7 +29,7 @@ class SecondQuestionController: UIViewController {
     
     private let label: UILabel = {
         let label = UILabel()
-        label.text = "Question 2"
+        label.text = "Favorite PE sport?"
         label.textColor = .light
         label.numberOfLines = 0
         label.textAlignment = .center

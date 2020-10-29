@@ -12,6 +12,7 @@ class ActivityController: UIViewController {
     // MARK: - Properties
     
     var student: Student
+    var partner: Student
     
     private lazy var headerView: UIView = {
         let view = UIView()
@@ -70,8 +71,9 @@ class ActivityController: UIViewController {
     
     // MARK: - Lifecycle
     
-    init(student: Student) {
+    init(student: Student, partner: Student) {
         self.student = student
+        self.partner = partner
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -102,13 +104,21 @@ class ActivityController: UIViewController {
                          right: view.rightAnchor, height: view.frame.height-450)
         promptLabel.center(inView: view)
         promptLabel.setWidth(width: view.frame.width-150)
-        nextButton.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingLeft: 50, paddingBottom: 50, paddingRight: 50)
+        nextButton.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor,
+                          paddingLeft: 50, paddingBottom: 50, paddingRight: 50)
     }
     
     // MARK: - Selectors
     
     @objc func didTapNext() {
-        print("Did tap next")
+        if (student.isFirst) {
+            let controller = InputController(student: student, partner: partner)
+            navigationController?.pushViewController(controller, animated: true)
+        } else {
+            let controller = LoadingController(student: student, partner: partner)
+            navigationController?.pushViewController(controller, animated: true)
+        }
+       
     }
     
     // MARK: - Helpers

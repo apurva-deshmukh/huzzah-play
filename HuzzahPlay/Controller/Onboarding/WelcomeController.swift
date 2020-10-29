@@ -77,11 +77,11 @@ class WelcomeController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        headerView.anchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 50, height: 200)
+        headerView.anchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor,
+                          paddingTop: 50,paddingLeft: 20, paddingRight: 20, height: 200)
         imageView.anchor(top: headerView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, height: view.frame.height-450)
         button.anchor(top: imageView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingLeft: 50, paddingRight: 50)
-        teacherSignInButton.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor,
-                                   paddingLeft: 32, paddingRight: 32)
+        teacherSignInButton.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingLeft: 32, paddingRight: 32)
     }
     
     // MARK: - Selectors

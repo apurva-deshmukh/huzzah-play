@@ -19,6 +19,8 @@ class MainController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //presentWelcomeScreen()
+        
         if (Auth.auth().currentUser?.uid == nil) {
             presentWelcomeScreen()
         } else {
@@ -52,7 +54,7 @@ class MainController: UIViewController {
         guard let student = student else { return }
         print("DEBUG: main \(student)")
         DispatchQueue.main.async {
-            let controller = ActivityController(student: student)
+            let controller = StudentHomeController(student: student)
             let nav = UINavigationController(rootViewController: controller)
             nav.modalPresentationStyle = .fullScreen
             self.present(nav, animated: true, completion: nil)

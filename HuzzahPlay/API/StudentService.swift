@@ -40,9 +40,19 @@ struct StudentService {
                     "first-name": student.firstName,
                     "last-name": student.lastName,
                     "email": student.email,
+                    "is-first": student.isFirst,
                     "uid": student.uid] as [String: Any]
          
         COLLECTION_STUDENTS.document(uid).setData(data)
+    }
+    
+    func uploadSentence(student: Student, completion: ((Bool) -> Void)) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        
+//        let data = ["sentences": student.sentences] as [String: Any]
+//         
+//        COLLECTION_STUDENTS.document(uid).updateData(data)
+//        completion(true)
     }
     
 }

@@ -25,6 +25,15 @@
 		EE7B0ED12529139E009E21BB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B0ED02529139E009E21BB /* Student.swift */; };
 		EEBAFFA02527BE7200DF38FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBAFF9F2527BE7200DF38FA /* Main.storyboard */; };
 		EEBAFFA52527BF2E00DF38FA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBAFFA42527BF2E00DF38FA /* Extensions.swift */; };
+		EEC214CB252CA41600EA5CA0 /* LoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC214CA252CA41600EA5CA0 /* LoadingController.swift */; };
+		EEC214D0252CA43400EA5CA0 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC214CF252CA43400EA5CA0 /* InputController.swift */; };
+		EEC214D5252CB2CF00EA5CA0 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC214D4252CB2CF00EA5CA0 /* InputTextView.swift */; };
+		EEC214DA252CEC7600EA5CA0 /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC214D9252CEC7600EA5CA0 /* GameService.swift */; };
+		EEC214DF252D02E800EA5CA0 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC214DE252D02E800EA5CA0 /* Story.swift */; };
+		EEC214E4252D1D2300EA5CA0 /* SeeSentenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC214E3252D1D2300EA5CA0 /* SeeSentenceController.swift */; };
+		EEC214EC252D2A2A00EA5CA0 /* FinishedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC214EB252D2A2A00EA5CA0 /* FinishedController.swift */; };
+		EEC214F1252D2F5700EA5CA0 /* ViewStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC214F0252D2F5700EA5CA0 /* ViewStoryController.swift */; };
+		EEC214F6252D2F7200EA5CA0 /* ScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC214F5252D2F7200EA5CA0 /* ScoreController.swift */; };
 		EEDDE85A2527C58C0050BCDD /* GloriaHallelujah-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEDDE8592527C58C0050BCDD /* GloriaHallelujah-Regular.ttf */; };
 		EEDDE8622527D3250050BCDD /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDDE8612527D3250050BCDD /* MainController.swift */; };
 		EEDDE86A2527D4C10050BCDD /* StudentLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDDE8692527D4C10050BCDD /* StudentLoginController.swift */; };
@@ -86,6 +95,15 @@
 		EE7B0ED02529139E009E21BB /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		EEBAFF9F2527BE7200DF38FA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EEBAFFA42527BF2E00DF38FA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EEC214CA252CA41600EA5CA0 /* LoadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingController.swift; sourceTree = "<group>"; };
+		EEC214CF252CA43400EA5CA0 /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
+		EEC214D4252CB2CF00EA5CA0 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		EEC214D9252CEC7600EA5CA0 /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		EEC214DE252D02E800EA5CA0 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		EEC214E3252D1D2300EA5CA0 /* SeeSentenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeSentenceController.swift; sourceTree = "<group>"; };
+		EEC214EB252D2A2A00EA5CA0 /* FinishedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedController.swift; sourceTree = "<group>"; };
+		EEC214F0252D2F5700EA5CA0 /* ViewStoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStoryController.swift; sourceTree = "<group>"; };
+		EEC214F5252D2F7200EA5CA0 /* ScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreController.swift; sourceTree = "<group>"; };
 		EEDDE8592527C58C0050BCDD /* GloriaHallelujah-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GloriaHallelujah-Regular.ttf"; sourceTree = "<group>"; };
 		EEDDE8612527D3250050BCDD /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		EEDDE8692527D4C10050BCDD /* StudentLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLoginController.swift; sourceTree = "<group>"; };
@@ -223,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				EE7B0ED02529139E009E21BB /* Student.swift */,
+				EEC214DE252D02E800EA5CA0 /* Story.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -234,6 +253,7 @@
 				EEEA012B2527D79600E55319 /* CustomTextField.swift */,
 				EEEA01302527D84100E55319 /* InputContainerView.swift */,
 				EEEA013F2527E6B200E55319 /* AnswerCell.swift */,
+				EEC214D4252CB2CF00EA5CA0 /* InputTextView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,6 +280,7 @@
 			children = (
 				EE7B0EC625291200009E21BB /* AuthService.swift */,
 				EE7B0ECB25291390009E21BB /* StudentService.swift */,
+				EEC214D9252CEC7600EA5CA0 /* GameService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -325,6 +346,12 @@
 			isa = PBXGroup;
 			children = (
 				EEF3B63D252ABD7200FEFACD /* ActivityController.swift */,
+				EEC214CA252CA41600EA5CA0 /* LoadingController.swift */,
+				EEC214CF252CA43400EA5CA0 /* InputController.swift */,
+				EEC214E3252D1D2300EA5CA0 /* SeeSentenceController.swift */,
+				EEC214EB252D2A2A00EA5CA0 /* FinishedController.swift */,
+				EEC214F0252D2F5700EA5CA0 /* ViewStoryController.swift */,
+				EEC214F5252D2F7200EA5CA0 /* ScoreController.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -571,23 +598,32 @@
 			files = (
 				EEEA012C2527D79600E55319 /* CustomTextField.swift in Sources */,
 				EE2317D525291CC500C98113 /* Constants.swift in Sources */,
+				EEC214F6252D2F7200EA5CA0 /* ScoreController.swift in Sources */,
 				EEEA01312527D84100E55319 /* InputContainerView.swift in Sources */,
+				EEC214D5252CB2CF00EA5CA0 /* InputTextView.swift in Sources */,
 				EEF3B638252AAB9D00FEFACD /* ShowPartnerController.swift in Sources */,
 				EEEA013B2527E1C000E55319 /* FirstQuestionController.swift in Sources */,
 				EEEA01402527E6B200E55319 /* AnswerCell.swift in Sources */,
 				EE21B0362527A58C000DBDF7 /* WelcomeController.swift in Sources */,
 				EEDDE86A2527D4C10050BCDD /* StudentLoginController.swift in Sources */,
+				EEC214DF252D02E800EA5CA0 /* Story.swift in Sources */,
 				EEF3B63E252ABD7200FEFACD /* ActivityController.swift in Sources */,
 				EE21B0322527A58C000DBDF7 /* AppDelegate.swift in Sources */,
+				EEC214F1252D2F5700EA5CA0 /* ViewStoryController.swift in Sources */,
 				EEEA01362527DD7F00E55319 /* StudentWelcomeController.swift in Sources */,
 				EE21B0342527A58C000DBDF7 /* SceneDelegate.swift in Sources */,
 				EEEA014B2527F03200E55319 /* ThirdQuestionController.swift in Sources */,
 				EEEA01452527F02000E55319 /* SecondQuestionController.swift in Sources */,
+				EEC214DA252CEC7600EA5CA0 /* GameService.swift in Sources */,
 				EEBAFFA52527BF2E00DF38FA /* Extensions.swift in Sources */,
+				EEC214E4252D1D2300EA5CA0 /* SeeSentenceController.swift in Sources */,
+				EEC214CB252CA41600EA5CA0 /* LoadingController.swift in Sources */,
 				EEDDE8622527D3250050BCDD /* MainController.swift in Sources */,
 				EE2317DB2529300700C98113 /* StudentHomeController.swift in Sources */,
+				EEC214EC252D2A2A00EA5CA0 /* FinishedController.swift in Sources */,
 				EE7B0EC725291200009E21BB /* AuthService.swift in Sources */,
 				EE7B0ECC25291390009E21BB /* StudentService.swift in Sources */,
+				EEC214D0252CA43400EA5CA0 /* InputController.swift in Sources */,
 				EE7B0ED12529139E009E21BB /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

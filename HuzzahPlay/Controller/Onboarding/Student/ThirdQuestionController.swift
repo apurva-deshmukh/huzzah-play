@@ -13,7 +13,7 @@ class ThirdQuestionController: UIViewController {
     
     // MARK: - Properties
     
-    private let answerChoices = ["Answer 1", "Answer 2", "Answer 3", "Answer 4"]
+    private let answerChoices = ["Stay on Earth!!", "Mars", "Saturn", "Venus"]
     
     var selectedString: String?
     
@@ -29,7 +29,7 @@ class ThirdQuestionController: UIViewController {
     
     private let label: UILabel = {
         let label = UILabel()
-        label.text = "Question 3"
+        label.text = "If you could go to any planet, which one would it be?"
         label.textColor = .light
         label.numberOfLines = 0
         label.textAlignment = .center
@@ -127,7 +127,7 @@ class ThirdQuestionController: UIViewController {
             )
         }
         
-        label.font = UIFontMetrics.default.scaledFont(for: customFont).withSize(30)
+        label.font = UIFontMetrics.default.scaledFont(for: customFont).withSize(25)
         label.adjustsFontForContentSizeCategory = true
         
         nextButton.titleLabel?.font = UIFontMetrics.default.scaledFont(for: customFont).withSize(30)
