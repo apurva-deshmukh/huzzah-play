@@ -93,7 +93,7 @@ class LoadingController: UIViewController {
     
     func fetchPartnerSentence() {
         GameService.shared.fetchLatestSentence(from: partner) { (sentence) in
-            if sentence != self.student.sentences.last {
+            if sentence != self.student.sentences.last && sentence != "" {
                 print("DEBUG: in controller \(sentence)")
                 self.nextButton.isEnabled = true
                 self.nextButton.backgroundColor = .secondary
