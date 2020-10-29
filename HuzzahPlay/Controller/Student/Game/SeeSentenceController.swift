@@ -40,7 +40,24 @@ class SeeSentenceController: UIViewController {
         return label
     }()
     
+    private let storyTitleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Our story so far:"
+        label.numberOfLines = 0
+        label.textColor = .dark
+        label.textAlignment = .center
+        return label
+    }()
+    
     private let sentenceLabel: UILabel = {
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.textColor = .dark
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private let storyLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
         label.textColor = .dark
@@ -57,6 +74,12 @@ class SeeSentenceController: UIViewController {
         button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         return button
+    }()
+    
+    private let underlineView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .dark
+        return view
     }()
     
     var sentence: String
@@ -76,10 +99,13 @@ class SeeSentenceController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.fetchStory()
         view.addSubview(headerView)
         view.addSubview(sentenceLabel)
         view.addSubview(mainLabel)
+        view.addSubview(underlineView)
+        view.addSubview(storyLabel)
+        view.addSubview(storyTitleLabel)
         view.addSubview(nextButton)
         
         configureUI()
@@ -93,10 +119,25 @@ class SeeSentenceController: UIViewController {
         mainLabel.anchor(top: headerView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor,
                          paddingTop: 30, paddingLeft: 32, paddingRight: 32)
         sentenceLabel.anchor(top: mainLabel.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor,
-                             paddingTop: 30, paddingLeft: 32, paddingRight: 32)
+                             paddingTop: 20, paddingLeft: 32, paddingRight: 32)
+        underlineView.anchor(top: sentenceLabel.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, height: 5)
+        storyTitleLabel.anchor(top: sentenceLabel.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor,
+                               paddingTop: 40, paddingLeft: 32, paddingRight: 32)
+        storyLabel.anchor(top: storyTitleLabel.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor,
+                          paddingTop: 20, paddingLeft: 32, paddingRight: 32)
         nextButton.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor,
                           paddingLeft: 50, paddingBottom: 50, paddingRight: 50)
+        
     }
+    
+    // MARK: - API
+    func fetchStory() {
+        GameService.shared.fetchStory(to: student, from: partner) { (story) in
+            print("DEBUG: story in controller is \(story)")
+            self.storyLabel.text = story
+        }
+    }
+    
     
     // MARK: - Selectors
     
@@ -134,6 +175,12 @@ class SeeSentenceController: UIViewController {
         sentenceLabel.text = "\"\(self.sentence)\""
         sentenceLabel.font = UIFontMetrics.default.scaledFont(for: customFont).withSize(25)
         sentenceLabel.adjustsFontForContentSizeCategory = true
+        
+        storyLabel.font = UIFontMetrics.default.scaledFont(for: customFont).withSize(25)
+        storyLabel.adjustsFontForContentSizeCategory = true
+        
+        storyTitleLabel.font = UIFontMetrics.default.scaledFont(for: customFont).withSize(40)
+        storyTitleLabel.adjustsFontForContentSizeCategory = true
         
         nextButton.titleLabel?.font = UIFontMetrics.default.scaledFont(for: customFont).withSize(25)
         nextButton.titleLabel?.adjustsFontForContentSizeCategory = true
