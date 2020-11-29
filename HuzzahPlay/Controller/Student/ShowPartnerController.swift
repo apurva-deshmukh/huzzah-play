@@ -90,9 +90,15 @@ class ShowPartnerController: UIViewController {
     }
     
     func fetchOtherUsers() {
-        StudentService.shared.fetchStudents { [weak self] (students) in
-            self?.otherStudents = students
-            self?.configureText()
+//        StudentService.shared.fetchStudents { [weak self] (students) in
+//            self?.otherStudents = students
+//            self?.configureText()
+//        }
+        
+        StudentService.shared.fetchPartner { (student) in
+            print("Partner name is \(student.firstName)")
+            self.partner = student
+            self.configureText()
         }
     }
     
@@ -127,8 +133,7 @@ class ShowPartnerController: UIViewController {
     }
     
     func configureText() {
-        guard let otherStudents = otherStudents else { return }
-        label.text = "\(otherStudents[0].firstName)!"
-        partner = otherStudents[0]
+        guard let partner = partner else { return }
+        label.text = "\(partner.firstName)!"
     }
 }

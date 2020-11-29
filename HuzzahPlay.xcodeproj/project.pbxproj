@@ -20,6 +20,8 @@
 		EE21B0652527B5AB000DBDF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE21B0642527B5AB000DBDF7 /* GoogleService-Info.plist */; };
 		EE2317D525291CC500C98113 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2317D425291CC500C98113 /* Constants.swift */; };
 		EE2317DB2529300700C98113 /* StudentHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2317DA2529300700C98113 /* StudentHomeController.swift */; };
+		EE4688872574391C00439323 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4688862574391C00439323 /* Session.swift */; };
+		EE46888C25743D1100439323 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE46888B25743D1100439323 /* Group.swift */; };
 		EE7B0EC725291200009E21BB /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B0EC625291200009E21BB /* AuthService.swift */; };
 		EE7B0ECC25291390009E21BB /* StudentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B0ECB25291390009E21BB /* StudentService.swift */; };
 		EE7B0ED12529139E009E21BB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B0ED02529139E009E21BB /* Student.swift */; };
@@ -90,6 +92,8 @@
 		EE21B0642527B5AB000DBDF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EE2317D425291CC500C98113 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE2317DA2529300700C98113 /* StudentHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeController.swift; sourceTree = "<group>"; };
+		EE4688862574391C00439323 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		EE46888B25743D1100439323 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		EE7B0EC625291200009E21BB /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		EE7B0ECB25291390009E21BB /* StudentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentService.swift; sourceTree = "<group>"; };
 		EE7B0ED02529139E009E21BB /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 			children = (
 				EE7B0ED02529139E009E21BB /* Student.swift */,
 				EEC214DE252D02E800EA5CA0 /* Story.swift */,
+				EE4688862574391C00439323 /* Session.swift */,
+				EE46888B25743D1100439323 /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -616,6 +622,7 @@
 				EEEA01452527F02000E55319 /* SecondQuestionController.swift in Sources */,
 				EEC214DA252CEC7600EA5CA0 /* GameService.swift in Sources */,
 				EEBAFFA52527BF2E00DF38FA /* Extensions.swift in Sources */,
+				EE4688872574391C00439323 /* Session.swift in Sources */,
 				EEC214E4252D1D2300EA5CA0 /* SeeSentenceController.swift in Sources */,
 				EEC214CB252CA41600EA5CA0 /* LoadingController.swift in Sources */,
 				EEDDE8622527D3250050BCDD /* MainController.swift in Sources */,
@@ -623,6 +630,7 @@
 				EEC214EC252D2A2A00EA5CA0 /* FinishedController.swift in Sources */,
 				EE7B0EC725291200009E21BB /* AuthService.swift in Sources */,
 				EE7B0ECC25291390009E21BB /* StudentService.swift in Sources */,
+				EE46888C25743D1100439323 /* Group.swift in Sources */,
 				EEC214D0252CA43400EA5CA0 /* InputController.swift in Sources */,
 				EE7B0ED12529139E009E21BB /* Student.swift in Sources */,
 			);

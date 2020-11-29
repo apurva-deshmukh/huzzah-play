@@ -7,6 +7,7 @@
 
 import FirebaseFirestore
 import Firebase
+import SwiftyJSON
 
 struct StudentService {
     
@@ -30,6 +31,34 @@ struct StudentService {
             }
             
             completion(students)
+        }
+    }
+    
+    func fetchPartner(completion: @escaping(Student) -> Void) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        print("DEBUG: \(uid)")
+        COLLECTION_SESSIONS.document("session3").getDocument { (snapshot, err) in
+            guard let dictionary = snapshot?.data() else { return }
+            let json = JSON(dictionary["group"])
+            let session = Session(json: json)
+            
+            var partnerUid = ""
+            for group in session.groups {
+                if (uid == group.uid1) {
+                    print("DEBUG: Partner - \(group.uid2)")
+                    partnerUid = group.uid2
+                    break
+                } else if (uid == group.uid2) {
+                    print("DEBUG: Partner - \(group.uid1)")
+                    partnerUid = group.uid1
+                    break
+                }
+            }
+            
+            fetchStudent(withUid: partnerUid) { (student) in
+                completion(student)
+            }
+            
         }
     }
     

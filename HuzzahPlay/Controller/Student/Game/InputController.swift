@@ -130,7 +130,7 @@ class InputController: UIViewController {
                 print("DEBUG: error uploading sentence - \(error.localizedDescription)")
                 return
             }
-            if (self.partner.sentences.count < 3) {
+            if (self.partner.sentences.count < 2) {
                 let controller = LoadingController(student: self.student, partner: self.partner)
                 self.navigationController?.pushViewController(controller, animated: true)
             } else {

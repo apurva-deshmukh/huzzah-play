@@ -142,7 +142,7 @@ class SeeSentenceController: UIViewController {
     // MARK: - Selectors
     
     @objc func didTapButton() {
-        if (student.sentences.count < 3) {
+        if (student.sentences.count < 2) {
             let controller = InputController(student: student, partner: partner)
             navigationController?.pushViewController(controller, animated: true)
         } else {
