@@ -98,6 +98,7 @@ class ShowPartnerController: UIViewController {
         StudentService.shared.fetchPartner { (student) in
             print("Partner name is \(student.firstName)")
             self.partner = student
+            self.student.isFirst = !student.isFirst
             self.configureText()
         }
     }

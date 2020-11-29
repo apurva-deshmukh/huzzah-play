@@ -21,16 +21,22 @@ struct GameService {
                     "timestamp": Timestamp(date: Date())] as [String: Any]
         
         COLLECTION_GAMES.document(currentUid).collection(partner.uid).addDocument(data: data) { (_) in
-            COLLECTION_GAMES.document(partner.uid).collection(currentUid).addDocument(data: data, completion: completion)
+            COLLECTION_GAMES.document(partner.uid).collection(currentUid).addDocument(data: data) { (error) in
+                self.fetchSentences(from: student, to: partner) { (story) in
+                    var mutStory = story
+                    mutStory.sentences.append(text)
+                    let sentences = ["sentences": mutStory.sentences] as [String: [String]]
+                    COLLECTION_GAMES.document(currentUid).collection(partner.uid).document("story").setData(sentences)
+                    COLLECTION_GAMES.document(partner.uid).collection(currentUid).document("story").setData(sentences)
+                }
+            }
             
-            self.fetchSentences(from: student, to: partner) { (story) in
-                var mutStory = story
-                mutStory.sentences.append(text)
-                let sentences = ["sentences": mutStory.sentences] as [String: [String]]
-                COLLECTION_GAMES.document(currentUid).collection(partner.uid).document("story").setData(sentences)
-                COLLECTION_GAMES.document(partner.uid).collection(currentUid).document("story").setData(sentences)
+            COLLECTION_SESSIONS.document(SESSION).collection("games").document(currentUid).collection(partner.uid).addDocument(data: data) { (_) in
+                COLLECTION_SESSIONS.document(SESSION).collection("games").document(partner.uid).collection(currentUid).addDocument(data: data, completion: completion)
             }
         }
+        
+        
     }
     
     func fetchSentences(from student: Student, to partner: Student, completion: @escaping(Story) -> Void) {

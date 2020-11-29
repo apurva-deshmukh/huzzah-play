@@ -37,12 +37,13 @@ struct StudentService {
     func fetchPartner(completion: @escaping(Student) -> Void) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         print("DEBUG: \(uid)")
-        COLLECTION_SESSIONS.document("session3").getDocument { (snapshot, err) in
+        COLLECTION_SESSIONS.document(SESSION).getDocument { (snapshot, err) in
             guard let dictionary = snapshot?.data() else { return }
             let json = JSON(dictionary["group"])
             let session = Session(json: json)
             
             var partnerUid = ""
+            var isFirst = false
             for group in session.groups {
                 if (uid == group.uid1) {
                     print("DEBUG: Partner - \(group.uid2)")
@@ -51,12 +52,15 @@ struct StudentService {
                 } else if (uid == group.uid2) {
                     print("DEBUG: Partner - \(group.uid1)")
                     partnerUid = group.uid1
+                    isFirst = true
                     break
                 }
             }
             
             fetchStudent(withUid: partnerUid) { (student) in
-                completion(student)
+                var partner = student
+                partner.isFirst = isFirst
+                completion(partner)
             }
             
         }
